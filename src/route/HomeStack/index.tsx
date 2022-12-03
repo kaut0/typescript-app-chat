@@ -7,9 +7,10 @@ const Stack = createNativeStackNavigator();
 const HomeStack = (): JSX.Element => {
   return (
     <Stack.Navigator
-      screenOptions={{
-        headerShown: false,
-      }}>
+    //   screenOptions={{
+    //     headerShown: false,
+    //   }}
+    >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="ChatScreen" component={ChatScreen} />
     </Stack.Navigator>

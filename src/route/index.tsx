@@ -6,7 +6,10 @@ const Stack = createNativeStackNavigator();
 
 const RootStack = (): JSX.Element => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
       <Stack.Screen name="Home" component={HomeStack} />
     </Stack.Navigator>
   );
