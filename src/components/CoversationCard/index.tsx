@@ -1,6 +1,6 @@
 import {Avatar} from '@rneui/themed';
 import * as React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import style from './style';
 const ConversationCard = ({
   title,
@@ -9,9 +9,10 @@ const ConversationCard = ({
 }: {
   title: string;
   desc: string;
+  onClick: any;
 }): JSX.Element => {
   return (
-    <View style={style.container}>
+    <TouchableOpacity onPress={props.onClick} style={style.container}>
       <Avatar
         size={64}
         rounded
@@ -21,7 +22,7 @@ const ConversationCard = ({
         <Text>{title}</Text>
         <Text>{desc}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

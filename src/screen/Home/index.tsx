@@ -13,7 +13,11 @@ const Home = (): JSX.Element => {
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={() => <View style={{marginTop: 10}} />}
         renderItem={({item}) => (
-          <ConversationCard title={item.name} desc={item.url} />
+          <ConversationCard
+            title={item.name}
+            desc={item.url}
+            onClick={clickItem}
+          />
         )}
       />
     </View>
