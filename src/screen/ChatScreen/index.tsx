@@ -4,11 +4,10 @@ import {Bubble, GiftedChat, Time} from 'react-native-gifted-chat';
 
 const ChatScreen = (): JSX.Element => {
   const [messages, setMessages] = React.useState<any>([]);
-  console.log(messages, 'ini messages');
   React.useEffect(() => {
     setMessages([
       {
-        _id: 1,
+        _id: 67,
         text: 'Hello developerkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk',
         createdAt: new Date(),
         user: {
